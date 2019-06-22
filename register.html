@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Sign Up</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.ico" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/login.css" rel="stylesheet">
+
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-color fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="index.html"><img class="logo" src="img/logo.png" alt="">
+                WebHosting</a>
+
+
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+                <div class="card card-signin my-5">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Sign Up</h5>
+                        <form class="form-signin">
+                            <div class="form-label-group">
+                                <input type="email" id="inputEmail" class="form-control" placeholder="Email address"
+                                    required autofocus>
+                                <label for="inputEmail">Email address</label>
+                            </div>
+
+                            <div class="form-label-group">
+                                <input type="text" id="inputUsername" class="form-control" placeholder="Username"
+                                    required>
+                                <label for="inputUsername">Username</label>
+                            </div>
+
+                            <div class="form-label-group">
+                                <input type="password" id="inputPassword" class="form-control" placeholder="Password"
+                                    required>
+                                <label for="inputPassword">Password</label>
+                            </div>
+
+                            <div class="form-label-group">
+                                <input type="password" id="passwordConfirm" class="form-control"
+                                    placeholder="Confirm Password" required>
+                                <label for="passwordConfirm">Confirm Password</label>
+                            </div>
+                            <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign
+                                Up</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer py-1 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; 2019 WebHosting</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom JavaScript for this theme -->
+    <script src="js/scrolling-nav.js"></script>
+    <script src="js/bootstrap-validate.js"></script>
+    <script>
+        bootstrapValidate('#inputEmail', 'email:Enter a valid email address')
+        bootstrapValidate('#inputUsername', 'required:Please enter your Username')
+        bootstrapValidate('#inputPassword', 'required:Please enter your Password')
+        bootstrapValidate('#inputPassword', 'min:6:Password should have at least 6 characters')
+        bootstrapValidate('#passwordConfirm', 'matches:#inputPassword:Your passwords should match')
+    </script>
+
+</body>
+
+</html>
